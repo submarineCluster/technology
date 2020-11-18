@@ -216,3 +216,42 @@ INFO: Did 2,202.2 RPCs/s
 gRPC允许您使用Protobuf以外的编码器。它不依赖Protobuf，并且是专门为与各种环境一起使用而设计的。我们可以看到，只需增加一点样板，就可以使用所需的任何编码器。虽然本文仅介绍JSON，但gRPC与Thrift，Avro，Flatbuffers，Cap'n Proto甚至原始字节兼容！gRPC使您可以控制数据的处理方式。（尽管由于强大的向后兼容性，类型检查和性能，我们仍然推荐Protobuf。）
 
 如果您希望看到一个完整的实现，所有代码都可以在[GitHub](https://github.com/carl-mastrangelo/kvstore/tree/04-gson-marshaller)上[找到](https://github.com/carl-mastrangelo/kvstore/tree/04-gson-marshaller)。
+
+
+
+
+
+
+
+## GRPC
+
+### Balancers
+
+- roundrobin
+- weightedRoundRobin
+- rls
+
+### Transport
+
+- http2.0
+
+### Codec
+
+- proto
+
+### Asc/Sync
+
+### Credentials
+
+- tls
+- google
+
+### Compression
+
+- gzip
+
+### Resolvers
+
+- dns
+
+### Trace
